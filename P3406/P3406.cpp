@@ -14,6 +14,6 @@ int main() {
     while (m --) {
         int to;
         cin >> to;
-        
+        last;
     }
 }
