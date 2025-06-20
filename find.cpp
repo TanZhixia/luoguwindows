@@ -3,6 +3,7 @@
 #include <windows.h>
 using namespace std;
 int main() {
+    SetConsoleOutputCP(CP_UTF8);
     cout << "请输入查找的题目:";
     string s, com;
     cin >> s >> com;
@@ -10,7 +11,7 @@ int main() {
         cerr << "ERROR!" << endl;
         return 1;
     }
-    ifstream in(s + "/" + s + ".cpp");
+    ifstream in((s + "/" + s + ".cpp").c_str());
     string line;
     string copyLine = "";
     while (getline(in, line)) {
