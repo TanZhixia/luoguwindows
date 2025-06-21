@@ -6,7 +6,9 @@ int main() {
     SetConsoleOutputCP(CP_UTF8);
     cout << "请输入查找的题目:";
     string s, com;
-    cin >> s >> com;
+    cin >> s;
+    cout << "请输入指令:";
+    cin >> com;
     if (com != "--all" && com != "--copy" && com != "--print") {
         cerr << "ERROR!" << endl;
         return 1;
